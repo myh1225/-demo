@@ -79,9 +79,9 @@ p.then((data) => {
 });
 let listPro = new Promise((resolve, reject) => {
     $.ajax({
-        type: 'POST',
+        type: 'GET',
         url: './data/list.json',
-        data: {t: 1},
+        // data: {t: 1},
         success: function (data) {
             resolve(data);
         },
